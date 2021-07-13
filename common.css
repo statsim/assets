@@ -1,0 +1,62 @@
+h1 {
+  font-size: 2.4em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.feature::before {
+  content: "+";
+  font-size: 2em;
+  color: #BBB;
+}
+
+.version {
+  float:right;
+  margin-top: 5px;
+  color: #BBB;
+}
+
+#menu {
+  display: inline;
+  margin-right: 20px;
+}
+
+#menu .dropdown-trigger {
+  transform: scale(2, 1);
+  padding: 0 10px !important;
+}
+
+#menu .dropdown-content {
+  min-width: 170px;
+  width: 170px;
+}
+
+#menu .dropdown-content li {
+  min-height: 40px;
+}
+
+#menu .dropdown-content li > a {
+  color: black;
+  line-height: 10px;
+  margin-right: 10px;
+}
+#menu .dropdown-content li > a:before {
+  content: ">";
+  color: #BBB;
+  font-weight: 300;
+  margin-right: 10px;
+
+
