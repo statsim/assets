@@ -18,7 +18,7 @@ h3 {
 }
 
 .status-bar {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .feature::before {
@@ -61,6 +61,7 @@ h3 {
 }
 
 #description {
+  margin-top: 40px;
   position: relative
 }
 #description .hide-button {
