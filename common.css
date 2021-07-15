@@ -33,21 +33,17 @@ h3 {
   display: inline;
   margin-right: 20px;
 }
-
 #menu .dropdown-trigger {
   transform: scale(2, 1);
   padding: 0 10px !important;
 }
-
 #menu .dropdown-content {
   min-width: 170px;
   width: 170px;
 }
-
 #menu .dropdown-content li {
   min-height: 40px;
 }
-
 #menu .dropdown-content li > a {
   color: black;
   line-height: 10px;
@@ -58,5 +54,26 @@ h3 {
   color: #BBB;
   font-weight: 300;
   margin-right: 10px;
+}
+
+#description {
+  position: relative
+}
+#description .hide-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  opacity: 0.5
+}
+#description .hide-button:hover {
+  opacity: 0.4;
+}
 
 

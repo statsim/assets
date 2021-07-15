@@ -30,3 +30,15 @@ if (menuEl) {
     }
   }, 100)
 }
+
+// Hide the description block
+const desc = document.getElementById('description')
+if (desc) {
+  const but = document.createElement('button')
+  but.className = 'hide-button'
+  but.innerText = '✕'
+  but.onclick = function () {
+    desc.style.display = 'none'
+  }
+  desc.appendChild(but)
+}
