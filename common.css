@@ -17,6 +17,10 @@ h3 {
   margin-bottom: 10px;
 }
 
+.status-bar {
+  margin-bottom: 50px;
+}
+
 .feature::before {
   content: "+";
   font-size: 2em;
