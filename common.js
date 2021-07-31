@@ -1,8 +1,6 @@
-console.log('asdas')
-
 const apps = [
   ['StatSim', 'https://statsim.com/app'],
-  ['Analyze', 'https://statsim.com/analyze'],
+  ['Analyze', 'https://analyze.li/analyze'],
   ['Fit', 'https://statsim.com/fit'],
   ['Forecast', 'https://statsim.com/forecast'],
   ['Gen', 'https://statsim.com/gen'],
