@@ -85,5 +85,11 @@ h3 {
 #description .hide-button:hover {
   opacity: 0.4;
 }
+#description .products {
+  background:white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  margin-bottom: 40px;
+}
 
 
