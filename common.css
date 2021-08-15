@@ -91,5 +91,21 @@ h3 {
   border-radius: 8px; 
   margin-bottom: 40px;
 }
+#description .feedback {
+  text-align: right;
+  width: 70%;
+  margin: auto;
+}
+#description .feedback a {
+  background-color: #bababa;
+  padding: 4px 9px;
+  color: white;
+  border-radius: 0px;
+  font-size: 13px;
+}
+#description .feedback a:hover {
+  background-color: #adadad;
+}
+
 
 
