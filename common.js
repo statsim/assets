@@ -40,9 +40,11 @@ if (desc) {
   }
   desc.appendChild(but)
 
-  const feedback = document.createElement('a')
+  const feedback_container = document.createElement('div')
+  feedback_container.classList.add('feedback')
+  const feedback = document.createElement('div')
   feedback.href = 'https://docs.google.com/forms/d/e/1FAIpQLSco13cEc2x4nbmEaaDu3jDg5fa7yN22ufMrxwNjLKAmn5Pf-g/viewform?usp=sf_link'
   feedback.innerText = 'Feedback'
-  feedback.classList.add('feedback')
-  desc.appendChild(feedback)
+  feedback_container.appendChild(feedback)
+  desc.appendChild(feedback_container)
 }
