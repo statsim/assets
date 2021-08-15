@@ -39,4 +39,10 @@ if (desc) {
     desc.style.display = 'none'
   }
   desc.appendChild(but)
+
+  const feedback = document.createElement('a')
+  feedback.href = 'https://docs.google.com/forms/d/e/1FAIpQLSco13cEc2x4nbmEaaDu3jDg5fa7yN22ufMrxwNjLKAmn5Pf-g/viewform?usp=sf_link'
+  feedback.innerText = 'Feedback'
+  feedback.classList.add('feedback')
+  desc.appendChild(feedback)
 }
