@@ -76,7 +76,7 @@ var ConsoleLogViewer = (function() {
 		else
 		{
 			var minimized = [];
-			for(var i = Math.max(0, _items.length-3), leni = _items.length; i < leni ; i++) minimized.push(_items[i]);
+			for(var i = Math.max(0, _items.length-2), leni = _items.length; i < leni ; i++) minimized.push(_items[i]);
 			document.getElementById('debug_console_messages').innerHTML = minimized.join("<br>");
 		}
 	}
