@@ -3,13 +3,15 @@
  * 
  * <https://github.com/markknol/console-log-viewer>
  * @author Mark Knol <http://blog.stroep.nl>
+ * 
+ * Cloned for updates and security
  */
 var ConsoleLogViewer = (function() {
-	ConsoleLogViewer.ALIGNMENT = "top"; // top | bottom
-	ConsoleLogViewer.IS_MINIMIZED = false; // true | false
+	ConsoleLogViewer.ALIGNMENT = "bottom"; // top | bottom
+	ConsoleLogViewer.IS_MINIMIZED = true; // true | false
 	ConsoleLogViewer.LOG_ENABLED = true;
 	ConsoleLogViewer.IS_CLOSED = false;
-	ConsoleLogViewer.TOTAL = 15;
+	ConsoleLogViewer.TOTAL = 3;
 	
 	var _items = [];
 	
