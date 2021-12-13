@@ -11,7 +11,7 @@ var ConsoleLogViewer = (function() {
 	ConsoleLogViewer.IS_MINIMIZED = true; // true | false
 	ConsoleLogViewer.LOG_ENABLED = true;
 	ConsoleLogViewer.IS_CLOSED = false;
-	ConsoleLogViewer.TOTAL = 3;
+	ConsoleLogViewer.TOTAL = 12;
 	
 	var _items = [];
 	
@@ -251,7 +251,7 @@ var ConsoleLogViewer = (function() {
 		ConsoleLogViewer.IS_CLOSED = value; 
 		
 		document.getElementById("debug_console_close_button").innerHTML = !value ? "x" : "&Xi;";
-		document.getElementById("debug_console").style.background = !value ? "rgba(0, 0, 0, .75)" : "transparent";
+		document.getElementById("debug_console").style.background = !value ? "rgba(7, 9, 15, .77)" : "transparent";
 		document.getElementById("debug_console_messages").style.display = !value ? "block" : "none";
 		document.getElementById("debug_console_minimize_button").style.display = !value ? "inline" : "none";
 		document.getElementById("debug_console_position_button").style.display = !value ? "inline" : "none";
@@ -277,14 +277,15 @@ var ConsoleLogViewer = (function() {
 	
 	ConsoleLogViewer.prototype.addCSS = function()
 	{
-		var css = '#debug_console { background: rgba(0,0,0,.75); position:fixed; padding:0; margin:0; z-index:12834567; box-sizing:border-box; pointer-events:none; text-align:left; text-transform:none; }';
-		css += '#debug_console, #debug_console * { font: 12px sans-serif!important;  }';
+		var css = '#debug_console { background: rgba(7, 9, 15, .77); position:fixed; padding:3px; margin:0; z-index:12834567; box-sizing:border-box; pointer-events:none; text-align:left; text-transform:none; }';
+		css += '#debug_console, #debug_console * { font: 10px mono !important;  }';
 		css += '#debug_console_messages { background:transparent;pointer-events:none; }'
 		css += '#debug_console_button { border:1px solid #fff; position:absolute; z-index:2;  }';
 		css += '#debug_console.top-aligned {left:0; right:0; top:0;}';
 		css += '#debug_console.minimized {left:0; right:0; top:0;}';
 		css += '#debug_console.bottom-aligned {left:0; right:0; bottom:0;}';
-		css += '#debug_console a.log-button {font: bold 12px sans-serif!important; pointer-events:all; text-align:center; text-decoration:none; border:1px solid #999; background:#333; color:#fff; width:16px; height:16px; padding:5px; margin:1px; display:block; float:right; box-sizing: content-box; }';
+		css += '#debug_console a.log-button {font: bold 12px sans-serif!important; pointer-events:all; text-align:center; text-decoration:none; color:#a6a6a6; width:16px; height:16px; padding:5px; margin:1px; display:block; float:right; box-sizing: content-box; }';
+		css += '#debug_console a.log-button:hover {color:#fff;}';
 		css += '#debug_console font.log-error a {pointer-events:all;color:red;}';
 		css += '#debug_console font.log-date {color:gray;}';
 		css += '#debug_console font.log-info {color:yellow;}';
