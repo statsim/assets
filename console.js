@@ -136,27 +136,27 @@ var ConsoleLogViewer = (function() {
 		// overwrite original functions
 		if (original.console.log) console.log = function()
 		{
-			self.log(self.flatten(Array.prototype.slice.call(arguments).join(",")),"log-normal", true); 
+			self.log(self.flatten(Array.prototype.slice.call(arguments).join(" ")),"log-normal", true); 
 			original.console.log.apply(this, arguments);
 		}
 		if (original.console.debug) console.debug = function()
 		{
-			self.log(self.flatten(Array.prototype.slice.call(arguments).join(",")),"log-debug", true); 
+			self.log(self.flatten(Array.prototype.slice.call(arguments).join(" ")),"log-debug", true); 
 			original.console.debug.apply(this, arguments);
 		}
 		if (original.console.info) console.info = function()
 		{
-			self.log(self.flatten(Array.prototype.slice.call(arguments).join(",")),"log-info", true); 
+			self.log(self.flatten(Array.prototype.slice.call(arguments).join(" ")),"log-info", true); 
 			original.console.info.apply(this, arguments);
 		}
 		if (original.console.warn) console.warn = function()
 		{
-			self.log(self.flatten(Array.prototype.slice.call(arguments).join(",")),"log-warn", true); 
+			self.log(self.flatten(Array.prototype.slice.call(arguments).join(" ")),"log-warn", true); 
 			original.console.warn.apply(this, arguments);
 		}
 		if (original.console.error) console.error = function()
 		{
-			self.log(self.flatten(Array.prototype.slice.call(arguments).join(",")),"log-error", true); 
+			self.log(self.flatten(Array.prototype.slice.call(arguments).join(" ")),"log-error", true); 
 			original.console.error.apply(this, arguments);
 		}
 		window.onerror = function(message, url, lineNumber){
