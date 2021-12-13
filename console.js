@@ -136,7 +136,11 @@ var ConsoleLogViewer = (function() {
 		// overwrite original functions
 		if (original.console.log) console.log = function()
 		{
-			self.log(self.flatten(Array.prototype.slice.call(arguments).join(" ")),"log-normal", true); 
+      const args = Array.prototype.slice.call(arguments).map(arg => {
+        return (typeof arg === 'object') ? JSON.stringify(arg).slice(0, 100) + '...' : arg
+      })
+
+			self.log(self.flatten(args.join(" ")), "log-normal", true); 
 			original.console.log.apply(this, arguments);
 		}
 		if (original.console.debug) console.debug = function()
